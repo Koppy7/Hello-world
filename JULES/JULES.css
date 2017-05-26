@@ -1,0 +1,890 @@
+        #cadrecentrale {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 150px;
+            border-left: 1px dashed #000000;
+            border-right: 1px dashed #000000;
+            border-bottom: 1px dashed #000000;
+            border-top: 1px dashed #000000;
+            background-color: #00FBFF;
+            opacity: 0.9;
+        }
+        
+        #menu {
+            position: fixed;
+            bottom: 0%;
+            width: 1430px;
+            background-color: #3D342E;
+            text-align: center;
+            margin-left: -3px;
+            padding: 10px;
+            z-index: 10;
+        }
+        
+        #lien1,
+        #lien2,
+        #lien3,
+        #lien4 {
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        
+        #WPYP {
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+            font-size: 15px;
+            float: left;
+            margin-left: 10px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-decoration: none;
+        }
+        
+        #WPYP:hover {
+            color: orangered;
+        }
+        
+        #lien1:hover,
+        #lien2:hover,
+        #lien3:hover,
+        #lien4:hover {
+            color: orangered;
+            font-size: 20px;
+        }
+        
+        #NoeudPapMenu {
+            float: left;
+            margin-top: 2px;
+        }
+        
+        a span.LogoMenuRU {
+            float: right;
+            padding-left: 30px;
+            margin-top: 2px;
+        }
+        
+        a span.LogoMenuFB {
+            float: right;
+            margin-bottom: 1px;
+        }
+        
+        a span.LogoMenuYT {
+            float: right;
+            padding-left: 30px;
+        }
+        
+        .cadreCentral2 {
+            width: 680px;
+            height: 1500px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-top: 1000px;
+            margin-left: 400px;
+            border-radius: 8px;
+            align-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        
+        #MrJulesLogo {
+            width: 440px;
+            height: 296px;
+            object-fit: cover;
+            left: 270px;
+            position: absolute;
+            top: 106px;
+            margin-left: 246px;
+        }
+        
+        video#bgvid {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background: url(JULES.jpg) no-repeat;
+            background-size: cover;
+        }
+        
+        #Video_Youtube {
+            margin-top: 870px;
+            margin-left: 390px;
+        }
+        
+        .Header {
+            position: absolute;
+            border: 3px solid black;
+            width: 674px;
+            height: 43px;
+            top: 91px;
+            left: 0;
+            background-color: black;
+            opacity: 0.55;
+            text-align: center;
+            margin-top: 730px;
+            margin-left: 398px;
+            margin-bottom: 0px;
+        }
+        
+        h1 {
+            color: #EDD8C7;
+            font-size: 15px;
+            font-family: "Britannic Bold", serif;
+            line-height: 5px;
+        }
+        
+        h2 {
+            font-size: 15px;
+            font-style: italic;
+            font-family: "Britannic Bold", serif;
+            line-height: 3px;
+            color: #EDD8C7;
+        }
+        
+        #slideshow2 {
+            position: relative;
+            width: 680px;
+            height: 310px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 0 auto 2em;
+            background: #FFF;
+            background: -webkit-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+            background: -moz-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+            background: -ms-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+            background: -o-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+            background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+            -webkit-border-radius: 2px 2px 2px 2px;
+            -moz-border-radius: 2px 2px 2px 2px;
+            border-radius: 2px 2px 2px 2px;
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        #slideshow2:before,
+        #slideshow2:after {
+            position: absolute;
+            bottom: 16px;
+            z-index: -10;
+            width: 50%;
+            height: 20px;
+            content: " ";
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 50%;
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7);
+            -moz-border-radius: 50%;
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        #slideshow2:before {
+            left: 0;
+            -webkit-transform: rotate(-4deg);
+            -moz-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+        }
+        
+        #slideshow2:after {
+            right: 0;
+            -webkit-transform: rotate(4deg);
+            -moz-transform: rotate(4deg);
+            transform: rotate(4deg);
+        }
+        
+        #slideshow2 .Petite_Video {
+            position: relative;
+            width: 700px;
+            height: 450px;
+            overflow: hidden;
+        }
+        
+        #slideshow2 .Petite_Video:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background: #999;
+        }
+        
+        #slideshow2 .slider2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 400%;
+            height: 310px;
+        }
+        
+        #slideshow figure {
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #slideshow figure:after {
+            position: absolute;
+            display: block;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+            -moz-box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+        }
+        
+        .TableauVid1 {
+            border-width: 3px solid black;
+            width: 680px;
+            height: 445px;
+            position: absolute;
+            background: linear-gradient(#373737, black 50%, #373737);
+            opacity: 0.8;
+            margin-top: 0px;
+            overflow: hidden;
+            text-align: center;
+            margin-left: 390px;
+        }
+        
+        .VidName1 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-left: 7px;
+            margin-top: 8px;
+        }
+        
+        #Vid1 {
+            float: left;
+            margin-top: 8px;
+            margin-left: 7px;
+        }
+        
+        .VidName2 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-left: 230px;
+            margin-top: 8px;
+        }
+        
+        .VidName2 p,
+        .VidName3 p,
+        .VidName1 p,
+        .VidName4 p,
+        .VidName5 p,
+        .VidName9 p {
+            font-size: 16px;
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+            line-height: 2px;
+        }
+        
+        .VidName6 p {
+            font-size: 16px;
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+        }
+        
+        .VidName7 p {
+            font-size: 16px;
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+        }
+        
+        .VidName8 p {
+            font-size: 16px;
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+        }
+        
+        #TitreChiant,
+        #TitreChiant2,
+        #TitreChiant3 {
+            padding-top: -10px;
+            margin-top: 1px;
+        }
+        
+        #Vid2 {
+            float: left;
+            margin-top: 8px;
+            margin-left: 3px;
+        }
+        
+        .VidName3 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 8px;
+            margin-left: 453px;
+        }
+        
+        #Vid3 {
+            float: left;
+            margin-top: 8px;
+            margin-left: 3px;
+        }
+        
+        .VidName4 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 143px;
+            margin-left: 7px;
+        }
+        
+        #Vid4 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+        }
+        
+        .VidName5 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 143px;
+            margin-left: 230px;
+        }
+        
+        #Vid5 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+        
+        .VidName6 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 143px;
+            margin-left: 453px;
+            text-align: center;
+        }
+        
+        #Vid6 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+        
+        .VidName7 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 277px;
+            margin-left: 7px;
+        }
+        
+        #Vid7 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+        }
+        
+        .VidName8 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 277px;
+            margin-left: 230px;
+        }
+        
+        #Vid8 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+        
+        .VidName9 {
+            float: left;
+            border-width: 3px solid black;
+            width: 220px;
+            height: 35px;
+            position: absolute;
+            background-color: darkred;
+            margin-top: 277px;
+            margin-left: 453px;
+        }
+        
+        #Vid9 {
+            float: left;
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+        
+        #Vid10 {
+            float: left;
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        
+        #BigCadre {
+            width: 667px;
+            height: 790px;
+            position: absolute;
+            text-align: center;
+        }
+        
+        .Description {
+            border-width: 3px solid black;
+            width: 680px;
+            height: 1370px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-left: 390px;
+            margin-top: 640px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        #MrJulesLogo2 {
+            width: 440px;
+            padding-top: 10px;
+            margin-bottom: 70px;
+            margin-left: 25px;
+        }
+        
+        h3,
+        h5,
+        h7,
+        h9,
+        h11 {
+            font-size: 19px;
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+            opacity: 1;
+        }
+        
+        #cadre h4,
+        #cadre1 h6,
+        #cadre2 h8,
+        #cadre3 h10 {
+            font-family: "Britannic Bold", serif;
+            color: black;
+            opacity: 0.7;
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        #cadre {
+            width: 370px;
+            background-color: #EDD8C7;
+            margin-left: 160px;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+        
+        #cadre1,
+        #cadre3 {
+            width: 360px;
+            background-color: #EDD8C7;
+            margin-left: 170px;
+            margin-bottom: 50px;
+            border-radius: 4px;
+        }
+        
+        #cadre2 {
+            width: 340px;
+            background-color: #EDD8C7;
+            margin-left: 170px;
+            margin-top: -40px;
+            margin-bottom: 50px;
+            border-radius: 4px;
+        }
+        
+        #cadre1 {
+            margin-top: 10px;
+        }
+        
+        #cadre3 {
+            margin-top: -20px;
+        }
+        
+        #cadreText,
+        #cadreText1,
+        #cadreText2,
+        #cadreText3,
+        #cadreText4 {
+            background: rgba(0, 0, 0, 0);
+            padding-top: 20px;
+            width: 700px;
+            height: 100px;
+        }
+        
+        #CadreAnime {
+            width: 680px;
+            height: 780px;
+            background: transparent;
+            margin-left: 390px;
+            margin-top: 1050px;
+            position: absolute;
+            z-index: 9;
+            animation-name: apparition;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        
+        .ReseauxSociaux {
+            margin-top: 820px;
+        }
+        
+        a span.Logo1 {
+            float: left;
+            margin-left: 300px;
+        }
+        
+        a span.Logo2 {
+            float: left;
+            margin-left: 50px;
+        }
+        
+        a span.LogoRU {
+            float: right;
+            margin-top: 80px;
+            margin-right: 305px;
+        }
+        
+        #slideShow {
+            position: relative;
+            width: 475px;
+            height: 325px;
+            padding: 8px;
+            padding-left: 2px;
+            margin: 0 auto 2em;
+            margin-top: 2300px;
+            background: #FFF;
+            background: linear-gradient(#373737, darkslategray 20%, darkslategray 80%, #373737);
+            border-radius: 4px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+            margin-left: 500px;
+        }
+        
+        #slideShow:before,
+        #slideShow:after {
+            position: absolute;
+            bottom: 16px;
+            z-index: -10;
+            width: 50%;
+            height: 20px;
+            content: " ";
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 20px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        #slideShow:before {
+            left: 0;
+            transform: rotate(-4deg);
+        }
+        
+        #slideShow:after {
+            right: 0;
+            transform: rotate(4deg);
+        }
+        
+        #slideShow .container {
+            position: absolute;
+            display: block;
+            width: 470px;
+            height: 310px;
+            overflow: hidden;
+        }
+        
+        #slideShow .container:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background: #000000;
+        }
+        
+        #slideShow .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 700%;
+            height: 310px;
+        }
+        
+        #slideShow figure {
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            margin-left: 1px;
+        }
+        
+        #slideShow figure:after {
+            position: absolute;
+            display: block;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+        }
+        
+        @keyframes slider {
+            0% {
+                left: 0%;
+            }
+            20% {
+                left: 0%;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -200%;
+            }
+            50% {
+                left: -300%;
+            }
+            70% {
+                left: -400%;
+            }
+            75% {
+                left: -500%;
+            }
+            95% {
+                left: -600%;
+            }
+            100% {
+                left: 0%;
+            }
+        }
+        
+        #slideShow .container .slider {
+            animation: slider 55s infinite;
+        }
+        
+        #contact {
+            position: absolute;
+            margin-top: 400px;
+            background: linear-gradient(black, darkslategray 10%, black, darkslategray 90%, black);
+            opacity: 0.6;
+            padding: 20px;
+            margin-left: 530px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        #contact p {
+            font-family: "Britannic Bold", serif;
+            color: #EDD8C7;
+            z-index: 999;
+        }
+        
+        #noeudPapContact {
+            z-index: 998;
+            opacity: 1;
+        }
+        
+        #mail {
+            font-size: 30px;
+        }
+        
+        #numero {
+            font-size: 20px;
+        }
+        
+        #MrJulesLogo2 {
+            opacity: 0.9;
+        }
+        
+        #EnglishText {
+            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
+            background-color: transparent;
+            width: 680px;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        .textEncadre {
+            background: #EDD8C7;
+            width: 400px;
+            border-radius: 3px;
+            margin-left: 140px;
+            margin-bottom: 100px;
+        }
+        
+        .TexteCadre,
+        .TexteCadre1,
+        .TexteCadre2,
+        .TexteCadre3,
+        .TexteCadre4 {
+            background-color: transparent;
+        }
+        
+        .TexteCadre4 {
+            margin-bottom: 30px;
+        }
+        
+        .TexteCadre h12,
+        .TexteCadre1 h14,
+        .TexteCadre2 h16,
+        .TexteCadre3 h18,
+        .TexteCadre4 h20 {
+            font-family: "Britannic Bold", serif;
+            font-size: 19px;
+            color: #EDD9C7;
+        }
+        
+        .textEncadre h13,
+        .textEncadre1 h15,
+        .textEncadre2 h17,
+        .textEncadre3 h19 {
+            font-family: "Britannic Bold", serif;
+            color: black;
+            opacity: 0.7;
+            font-size: 20px;
+        }
+        
+        .textEncadre1 {
+            background: #EDD8C7;
+            width: 350px;
+            border-radius: 3px;
+            margin-left: 165px;
+            margin-bottom: 100px;
+        }
+        
+        .textEncadre2 {
+            background: #EDD8C7;
+            width: 320px;
+            border-radius: 3px;
+            margin-left: 180px;
+            margin-bottom: 100px;
+        }
+        
+        .textEncadre3 {
+            background: #EDD8C7;
+            width: 360px;
+            border-radius: 3px;
+            margin-left: 160px;
+            margin-bottom: 100px;
+        }
+        
+        @keyframes typer {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%
+            }
+        }
+        
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+            100% {
+                border-color: orange;
+            }
+        }
+        
+        a span.Logo3 {
+            float: left;
+            margin-left: 290px;
+        }
+        
+        a span.Logo4 {
+            float: left;
+            margin-left: 60px;
+        }
+        
+        a span.LogoRU1 {
+            float: right;
+            margin-top: 120px;
+            margin-right: 320px;
+        }
+        
+        .typed-cursor {
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #typed {
+            font-size: 20px;
+            font-family: "Britannic Bold", serif;
+        }
