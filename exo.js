@@ -23,3 +23,6 @@ function Person (_prenom, _nom, _age) {
 
 var Xa = new Person ("Xavier", "Boubert", "31");
 var Nico = new Person ("Nico", "Granier", "20");
+
+Xa.prenom = "toto";
+Nico.prenom = "titi";
