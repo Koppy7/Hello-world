@@ -212,6 +212,8 @@ var Ryan = new Perso("Ryan", Perso.GENDERS.MALE, "Fucking Casu", "Call of Duty",
 }
 
 console.log(Travis.describe());
+console.log(Travis.drawsWeapon(Kaina));
+console.log(Travis.shot(Kaina));
 
 
  //console.log(annonceArene.bienvenue1());
