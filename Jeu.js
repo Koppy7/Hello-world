@@ -10,6 +10,19 @@ function Perso (Name, Gender, Alias, From, HP, Weapon, weaponPower, criticalWeap
     this.Master = Master;
 }
     
+function decrire(obj) {
+    var description = "Nom : " + obj.Name + " \nAussi connu sous l'alias de " + obj.Alias + " \nil nous vient tout droit de " + 
+    obj.From + " il possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nson Maitre trainer est : " 
+     + obj.Master + " !\n\n"
+
+                if (obj.Gender == "Femme") {
+                    description = "Nom : " + obj.Name + "\nAussi connue sous le pseudo de " + obj.Alias + "\nelle nous vient tout droit de " +
+                    obj.From + " elle possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nSon Maitre trainer est : "
+                    + obj.Master + " !\n\n";
+                }
+
+            return description;
+}
 
 annonceArene = {
     bienvenue1: function() {
@@ -108,9 +121,9 @@ ambiance = {
     etatPerso: function(obj, adversaire) {
         if (obj.HP > 20) {
             if (obj.Gender == "Femme") {
-                console.log(obj.Name + " se sent bien dans ce combat, elle lui reste " + obj.HP);
+                console.log(obj.Name + " se sent bien dans ce combat, elle lui reste " + obj.HP + " HP !");
             } else {
-            console.log(obj.Name + " se sent bien dans ce combat, il lui reste " + obj.HP);
+            console.log(obj.Name + " se sent bien dans ce combat, il lui reste " + obj.HP + " HP !");
              }
         
                 if (adversaire.HP < 21) {
@@ -138,20 +151,6 @@ ambiance = {
     }
 }
 
-function decrire(obj) {
-        var description = "Nom : " + obj.Name + " \nAussi connu sous l'alias de " + obj.Alias + " \nil nous vient tout droit de " + 
-            obj.From + " il possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nson Maitre trainer est : " 
-            + obj.Master + " !\n\n"
-
-                if (obj.Gender == "Femme") {
-                    description = "Nom : " + obj.Name + "\nAussi connue sous le pseudo de " + obj.Alias + "\nelle nous vient tout droit de " +
-                    obj.From + " elle possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nSon Maitre trainer est : "
-                    + obj.Master + " !\n\n";
-                }
-
-            return description;
-}
-
 var Travis = new Perso("Travis", "Homme", "Guardian Angel", "Independenza", 250, "Light Spirit", 60, 90, "-The W-");
 var Kaïna = new Perso("Kaïna", "Femme", "Fatal Smooth", "Kanazawa", 140, "Telescopic Katana", 30, 50, "Musashi Miyamoto");
 var Ryan = new Perso("Ryan", "Homme", "Fucking Casu", "Call of Duty", 50, "Shrill Voice", 15, 50, "'Only me can judge me'");
@@ -172,6 +171,7 @@ var Ryan = new Perso("Ryan", "Homme", "Fucking Casu", "Call of Duty", 50, "Shril
             }
         }
  
+
  //console.log(annonceArene.bienvenue1());
  //console.log(decrire(Kaïna));
  //console.log(annonceArene.bienvenue2());
@@ -182,10 +182,8 @@ var Ryan = new Perso("Ryan", "Homme", "Fucking Casu", "Call of Duty", 50, "Shril
  //console.log(decrireAllPerso());
  //console.log(decrire(Kaïna));
  //console.log(ambiance.etatPerso(Kaïna, Ryan));
- //console.log(fight.attaqueH2(Ryan, Kaïna));
  //console.log(decrireH(Travis));
  //console.log(fight.sortirArme(Travis));
  //console.log(fight.enGarde(Kaïna));
- //console.log(fight.attaqueH2(Travis, Kaïna));
  //console.log(ambiance.etatHP(Kaïna, Ryan, Travis));
- console.log(ambiance.etatPerso(Kaïna, Ryan));
+ //console.log(ambiance.etatPerso(Kaïna, Ryan));
