@@ -191,13 +191,13 @@ ambiance = {
 }
 
 var Travis = new Perso("Travis", Perso.GENDERS.MALE, "Guardian Angel", "Independenza", 250, "Light Spirit", 60, 90, "-The W-");
-var Kaïna = new Perso("Kaïna", Perso.GENDERS.FEMALE, "Fatal Smooth", "Kanazawa", 140, "Telescopic Katana", 30, 50, "Musashi Miyamoto");
+var Kaina = new Perso("Kaina", Perso.GENDERS.FEMALE, "Fatal Smooth", "Kanazawa", 140, "Telescopic Katana", 30, 50, "Musashi Miyamoto");
 var Ryan = new Perso("Ryan", Perso.GENDERS.MALE, "Fucking Casu", "Call of Duty", 50, "Shrill Voice", 15, 50, "'Only me can judge me'");
 
 
  var Personnages = [];
  Personnages.push(Travis);
- Personnages.push(Kaïna);
+ Personnages.push(Kaina);
  Personnages.push(Ryan);
 
  function decrireAllPerso() {
@@ -215,17 +215,17 @@ console.log(Travis.describe());
 
 
  //console.log(annonceArene.bienvenue1());
- //console.log(decrire(Kaïna));
+ //console.log(decrire(Kaina));
  //console.log(annonceArene.bienvenue2());
  //console.log(decrire(Ryan));
  //console.log(annonceArene.inPosition());
- //console.log(fight.attaque(Kaïna, Ryan));
- //console.log(fight.attaque2(Ryan, Kaïna));
+ //console.log(fight.attaque(Kaina, Ryan));
+ //console.log(fight.attaque2(Ryan, Kaina));
  //console.log(decrireAllPerso());
- //console.log(decrire(Kaïna));
- //console.log(ambiance.etatPerso(Kaïna, Ryan));
+ //console.log(decrire(Kaina));
+ //console.log(ambiance.etatPerso(Kaina, Ryan));
  //console.log(decrireH(Travis));
  //console.log(fight.sortirArme(Travis));
- //console.log(fight.enGarde(Kaïna));
- //console.log(ambiance.etatHP(Kaïna, Ryan, Travis));
- //console.log(ambiance.etatPerso(Kaïna, Ryan));
+ //console.log(fight.enGarde(Kaina));
+ //console.log(ambiance.etatHP(Kaina, Ryan, Travis));
+ //console.log(ambiance.etatPerso(Kaina, Ryan));
