@@ -47,41 +47,121 @@ Perso.GENDERS = {
     FEMALE: "FEMALE"
 };
 
-// You can remove this
+function TheArene (Typ){
+    var _that = this;
 
-// function decrire(obj) {
-//     var description = "Nom : " + obj.Name + " \nAussi connu sous l'alias de " + obj.Alias + " \nil nous vient tout droit de " +
-//     obj.From + " il possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nson Maitre trainer est : "
-//      + obj.Master + " !\n\n"
+    this.typ = Typ;
 
-//                 if (obj.Gender == "Femme") {
-//                     description = "Nom : " + obj.Name + "\nAussi connue sous le pseudo de " + obj.Alias + "\nelle nous vient tout droit de " +
-//                     obj.From + " elle possède " + obj.HP + " points de vie !\nIl a décidé de se battre avec : " + obj.Weapon + " ! Son pouvoir est de : " + obj.weaponPower + "\nSon Maitre trainer est : "
-//                     + obj.Master + " !\n\n";
-//                 }
+    this.describe = function () {
+        var texts = {
+            Security:
+                "Notre garde robotique dernière génération est et restera" +
+                "\npendant encore une décénnie la plus robuste, la plus agile" +
+                "\net la plus pointue des armées robotique de notre génération" + 
+                "\net marquera le début d'une nouvelle ère en matière de défense" +
+                "\nà petite et grande échelle. Nous vous présentons aujourd'hui ..."+
+                "\nLA révolution : Les iMPLANTS TROUPERS\n\n",
+                
+            whatIsThis:   
+                "La fondation McCourt est heureuse de vous présenter" +
+                "\nsa toute nouvelle arène de combattants iTech !" +
+                "\nEquipée d'une garde robotique et de barrières" +
+                "\nelectromagnétiques empéchant toute fuite de la part" +
+                "\nd'un lache et peureux combattant." + 
+                "\nVos sièges sont équipés de casques de réalité virtuelle" +
+                "\nafin de revivre au plus prés de l'action une phase qui vous" +
+                "\na marqué. Réveillez votre instinct en vous arrêtant au stand" +
+                "\nde puçage électronique afin de vivre le 'Show' plus intensément." +
+                "\n--SOYEZ CE QU'ON VOUS SOMME D'ÊTRE--\n\n",
+            
+            Fundation:
+                "La fondation McCourt offre à nos clients et fideles combattants" +
+                "\nla certitude d'un controle total sur le bon déroulé de chacuns" +
+                "\nde nos combats grâce à l'apaisement de foule offert par nos" +
+                "\npartenaires et sponsors aux stands de puçage qui se trouvent aux" +
+                "\n4 coins de l'arène. Osez être nous même.\n\n"
+        };
 
-//             return description;
-// }
+        var text = texts[_that.typ];
 
-annonceArene = {
-    bienvenue1: function() {
-        var bienvenue = "\n[SPEAKER]\n--Bienvenue dans l'arène 1 contre 1--\n\nNous sommes réunis ce soir pour voir du sang et il va y en avoir.\nCOMBAT À MORT FAITES ENTRER LES COMBATTANTS\n\nPremier combattant ! \n";
-           return bienvenue
-    },
-    bienvenue2: function() {
-        var bienvenue = "\n[SPEAKER]\nC'est l'heure du second combattant ! C'est parti !\n";
-            return bienvenue;
-    },
-    inPosition: function() {
-        var inPosition = "\n[SPEAKER]\nEn position, guerriers"
-            return inPosition;
-    },
-    newCombattant: function(obj) {
-        var bienvenue = "\n[SPEAKER]\nMon dieu ! C'est .. C'est l'esprit de lumière ?";
-            return bienvenue;
+        return text;
+    };
+    this.annonce = function () {
+        var texts = {
+            WelcomeAll:
+                "[SPEAKER]Bienvenue ! Nous nous retrouvons aujourd'hui pour un combat" +
+                "\ncomptant pour les Wildcards en vue des championnats du Monde qui" +
+                "\nse joueront ici même à Marseille. Nous vous promettons un show" +
+                "\ninoubliable pour le dernier combat de notre ère. La finale se" +
+                "\njouera seulement lorsque les deux finalistes seront remis" +
+                "\net prêts à combattre. Cela peut prendre plusieurs années" +
+                "\nlorsque qu'un combattant a du se battre à mort avec une" +
+                "\nvingtaine d'adversaire en moins de 3 mois afin d'arriver en" +
+                "\nfinale.\n\n",
+
+            Welcome1stFighter:
+                "[SPEAKER]Nous avons le plaisir d'accueillir notre premier combattant !" +
+                "\nQUE LE SHOW COMMENCE\n\n",
+            
+            Welcome2ndFighter:
+                "[SPEAKER]C'est maintenant le tour du deuxième combattant d'entrer en scène," +
+                "\nJe vous demande une ovation !\n\n",
+            
+            Reprise:
+                "[SPEAKER]Doux Jesus, quelle ambiance !\n"
+
+        };
+
+        var text = texts[_that.typ];
+
+        return text;
+    };
+}
+TheArene.TYP = {
+    SECURITY: "Security",
+    WHATISTHIS: "whatIsThis",
+    FUNDATION: "Fundation",
+    WELCOMEALL: "WelcomeAll",
+    WELCOME1st: "Welcome1stFighter",
+    WELCOME2nd: "Welcome2ndFighter",
+    REPRISE: "Reprise"
+};
+
+function Ambiance (Effect) {
+    var _that = this;
+
+    this._effect = Effect;
+
+    this.effect = function () {
+        var texts = {
+            Lumieres:
+                "Les faisseaux lumineux dansent ensemble dans un rythme qui semble s'accelerer...\n\n",
+            
+            Sons:
+                "Dans une danse entre tambours et trompettes le temps semble s'être arreter." +
+                "\nLe rythme semble être en parfait accord avec la danse des lumières",
+
+            Fumée:
+                "Une épaisse fumée rouge entoure l'ensemble du champ de bataille ..." +
+                "\nL'odeur de la mort se fait de plus en plus préssentir dans tous les" +
+                "\nrecoins de l'arène.",
+            
+            Fermeture:
+                 "Les portes donnant accés aux tribunes se sont brusquement refermées" +
+                "tandis que celles du champs de bataille s'ouvrent lentement. On" +
+                "distingue difficilement le bruit de feraille à travers la musique."
         }
-    }
+        var text = texts[_that._effect];
 
+        return text;
+    };
+}
+Ambiance.EFFECT = {
+    LUMIERES: "Lumieres",
+    SONS: "Sons",
+    FUMÉE: "Fumée",
+    FERMETURE: "Fermeture"
+}
 fight = {
     sortirArme: function(obj) {
         var sortie = obj.Name + " décide de passer à l'action et sort son arme '" + obj.Weapon + "' !";
@@ -120,7 +200,6 @@ fight = {
 
                     return touch;
             }
-        console.log(attaque);
 
 
     },
@@ -194,6 +273,18 @@ var Travis = new Perso("Travis", Perso.GENDERS.MALE, "Guardian Angel", "Independ
 var Kaina = new Perso("Kaina", Perso.GENDERS.FEMALE, "Fatal Smooth", "Kanazawa", 140, "Telescopic Katana", 30, 50, "Musashi Miyamoto");
 var Ryan = new Perso("Ryan", Perso.GENDERS.MALE, "Fucking Casu", "Call of Duty", 50, "Shrill Voice", 15, 50, "'Only me can judge me'");
 
+var Garde = new TheArene(TheArene.TYP.SECURITY);
+var Arene = new TheArene(TheArene.TYP.WHATISTHIS);
+var Fondation = new TheArene(TheArene.TYP.FUNDATION);
+var WelcomeAll = new TheArene(TheArene.TYP.WELCOMEALL);
+var Welcome1st = new TheArene(TheArene.TYP.WELCOME1st);
+var Welcome2nd = new TheArene(TheArene.TYP.WELCOME2nd);
+var Reprise = new TheArene(TheArene.TYP.REPRISE);
+
+var Lumieres = new Ambiance(Ambiance.EFFECT.LUMIERES);
+var Sons = new Ambiance(Ambiance.EFFECT.SONS);
+var Fumee = new Ambiance(Ambiance.EFFECT.FUMEE);
+var Fermeture = new Ambiance(Ambiance.EFFECT.FERMETURE);
 
  var Personnages = [];
  Personnages.push(Travis);
@@ -209,25 +300,21 @@ var Ryan = new Perso("Ryan", Perso.GENDERS.MALE, "Fucking Casu", "Call of Duty",
          console.log(descriptionAll);
         }
     }
-}
-
-console.log(Travis.describe());
-console.log(Travis.drawsWeapon(Kaina));
-console.log(Travis.shot(Kaina));
 
 
- //console.log(annonceArene.bienvenue1());
- //console.log(decrire(Kaina));
- //console.log(annonceArene.bienvenue2());
- //console.log(decrire(Ryan));
- //console.log(annonceArene.inPosition());
- //console.log(fight.attaque(Kaina, Ryan));
- //console.log(fight.attaque2(Ryan, Kaina));
- //console.log(decrireAllPerso());
- //console.log(decrire(Kaina));
- //console.log(ambiance.etatPerso(Kaina, Ryan));
- //console.log(decrireH(Travis));
- //console.log(fight.sortirArme(Travis));
- //console.log(fight.enGarde(Kaina));
- //console.log(ambiance.etatHP(Kaina, Ryan, Travis));
- //console.log(ambiance.etatPerso(Kaina, Ryan));
+//console.log(Travis.describe());
+//console.log(Travis.drawsWeapon(Kaina));
+//console.log(Travis.shot(Kaina));
+//console.log(Arene.describe());
+//console.log(Fondation.describe());
+//console.log(Security.describe());
+
+//console.log(WelcomeAll.annonce());
+//console.log(Welcome1st.annonce());
+//console.log(Welcome2nd.annonce());
+//console.log(Reprise.annonce());
+
+ console.log(Lumieres.effect());
+ console.log(Sons.effect());
+ console.log(Fumee.effect());
+ console.log(Fermeture.effect());
